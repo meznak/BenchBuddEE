@@ -1,0 +1,2 @@
+arduino (inches):
+2.95 x 2.09 x 0.60

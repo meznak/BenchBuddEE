@@ -1,0 +1,9 @@
+component cost
+solderable components
+readily available components
+low lead-time components
+minimize PTH components
+minimize board layers (optimally 2-4)
+size: ~= arduino
+stackable with arduino
+power compatible with arduino
