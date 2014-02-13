@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0  Date: Tue 11 Feb 2014 06:18:58 PM MST
+#
+$CMP RELAY_SPDT
+D Single Pole, Double Throw
+K Relay SPDT
+$ENDCMP
+#
+#End Doc Library
