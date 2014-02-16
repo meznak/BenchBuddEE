@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title ""
-Date "13 feb 2014"
+Date "16 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -72,10 +72,9 @@ S 7400 4550 1100 1050
 U 52F19A48
 F0 "LED" 50
 F1 "LED.sch" 50
-F2 "EN" I L 7400 4750 60 
-F3 "FREQ" I L 7400 4950 60 
-F4 "STRING+" O R 8500 4750 60 
-F5 "STRING-" I R 8500 4950 60 
+F2 "STRING+" O R 8500 4750 60 
+F3 "STRING-" I R 8500 4950 60 
+F4 "LED_EN_PWM" I L 7400 4850 60 
 $EndSheet
 $Sheet
 S 9800 2500 750  4000

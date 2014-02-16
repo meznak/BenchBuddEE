@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 9
 Title ""
-Date "13 feb 2014"
+Date "16 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,12 +45,157 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1650 2500 0    60   Input ~ 0
-EN
-Text HLabel 1650 2850 0    60   Input ~ 0
-FREQ
-Text HLabel 9250 2800 2    60   Output ~ 0
+Text HLabel 2000 2700 0    60   Input ~ 0
+LED_EN_PWM
+Text HLabel 4500 2500 2    60   Output ~ 0
 STRING+
-Text HLabel 9300 3250 2    60   Input ~ 0
+Text HLabel 4500 2800 2    60   Input ~ 0
 STRING-
+$Comp
+L AP5726 U?
+U 1 1 5300301C
+P 3300 2500
+F 0 "U?" H 3600 1850 60  0000 C CNN
+F 1 "AP5726" H 3300 2350 60  0000 C CNN
+F 2 "" H 3300 2500 60  0000 C CNN
+F 3 "" H 3300 2500 60  0000 C CNN
+	1    3300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2700 2650 2700
+$Comp
+L +5V #PWR?
+U 1 1 53003233
+P 2050 1600
+F 0 "#PWR?" H 2050 1690 20  0001 C CNN
+F 1 "+5V" H 2050 1690 30  0000 C CNN
+F 2 "" H 2050 1600 60  0000 C CNN
+F 3 "" H 2050 1600 60  0000 C CNN
+	1    2050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 53003244
+P 3300 3600
+F 0 "#PWR?" H 3300 3600 30  0001 C CNN
+F 1 "GND" H 3300 3530 30  0001 C CNN
+F 2 "" H 3300 3600 60  0000 C CNN
+F 3 "" H 3300 3600 60  0000 C CNN
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3600 3300 3350
+$Comp
+L C C?
+U 1 1 5300357D
+P 2250 2000
+F 0 "C?" H 2250 2100 40  0000 L CNN
+F 1 "C" H 2256 1915 40  0000 L CNN
+F 2 "~" H 2288 1850 30  0000 C CNN
+F 3 "~" H 2250 2000 60  0000 C CNN
+	1    2250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5300358C
+P 2250 2400
+F 0 "#PWR?" H 2250 2400 30  0001 C CNN
+F 1 "GND" H 2250 2330 30  0001 C CNN
+F 2 "" H 2250 2400 60  0000 C CNN
+F 3 "" H 2250 2400 60  0000 C CNN
+	1    2250 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2400 2250 2200
+Wire Wire Line
+	2250 1800 2250 1700
+Wire Wire Line
+	2050 1700 2800 1700
+Wire Wire Line
+	2050 1700 2050 1600
+$Comp
+L INDUCTOR L?
+U 1 1 530035A4
+P 3100 1700
+F 0 "L?" V 3050 1700 40  0000 C CNN
+F 1 "INDUCTOR" V 3200 1700 40  0000 C CNN
+F 2 "~" H 3100 1700 60  0000 C CNN
+F 3 "~" H 3100 1700 60  0000 C CNN
+	1    3100 1700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2250 1700
+Wire Wire Line
+	2650 1700 2650 1850
+Wire Wire Line
+	2650 1850 3100 1850
+Wire Wire Line
+	3100 1850 3100 1900
+Connection ~ 2650 1700
+Wire Wire Line
+	3400 1700 3700 1700
+Wire Wire Line
+	3500 1700 3500 1900
+$Comp
+L DIODESCH D?
+U 1 1 530035EA
+P 3900 1700
+F 0 "D?" H 3900 1800 40  0000 C CNN
+F 1 "DIODESCH" H 3900 1600 40  0000 C CNN
+F 2 "~" H 3900 1700 60  0000 C CNN
+F 3 "~" H 3900 1700 60  0000 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 1700
+$Comp
+L C C?
+U 1 1 53003611
+P 5400 2100
+F 0 "C?" H 5400 2200 40  0000 L CNN
+F 1 "C" H 5406 2015 40  0000 L CNN
+F 2 "~" H 5438 1950 30  0000 C CNN
+F 3 "~" H 5400 2100 60  0000 C CNN
+	1    5400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1900 5400 1700
+Wire Wire Line
+	5400 1700 4100 1700
+Wire Wire Line
+	3300 3500 5400 3500
+Wire Wire Line
+	5400 3500 5400 2300
+Wire Wire Line
+	3950 2500 4500 2500
+Wire Wire Line
+	4300 2500 4300 1700
+Connection ~ 4300 1700
+Connection ~ 4300 2500
+Wire Wire Line
+	4500 2800 3950 2800
+$Comp
+L R R?
+U 1 1 53003684
+P 4300 3150
+F 0 "R?" V 4380 3150 40  0000 C CNN
+F 1 "R" V 4307 3151 40  0000 C CNN
+F 2 "~" V 4230 3150 30  0000 C CNN
+F 3 "~" H 4300 3150 30  0000 C CNN
+	1    4300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2900 4300 2800
+Connection ~ 4300 2800
+Wire Wire Line
+	4300 3400 4300 3500
+Connection ~ 4300 3500
+Connection ~ 3300 3500
 $EndSCHEMATC
