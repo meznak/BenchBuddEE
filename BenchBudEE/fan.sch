@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title ""
-Date "16 feb 2014"
+Date "17 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,15 +46,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 9950 3300 2    60   Output ~ 0
-POWER+
-Text HLabel 9950 3600 2    60   Input ~ 0
-POWER-
+FAN_OUT+
+Text HLabel 9950 3600 2    60   Output ~ 0
+FAN_OUT-
 Text HLabel 9950 4000 2    60   Input ~ 0
 TACH_IN
-Text HLabel 1450 5300 0    60   Output ~ 0
-TACH_OUT
+Text HLabel 1500 5300 0    60   Output ~ 0
+TACH_MEAS
 Text HLabel 1500 4500 0    60   Input ~ 0
-FAN_IN
+FAN_EN
 $Comp
 L LM324 U?
 U 1 1 52F69E3F
@@ -225,8 +225,8 @@ Wire Wire Line
 	8600 4000 8600 5300
 Wire Wire Line
 	8600 5300 1450 5300
-Text HLabel 1450 5100 0    60   Output ~ 0
-Current_Measure
+Text HLabel 1500 5100 0    60   Output ~ 0
+CUR_MEAS
 Wire Wire Line
 	1450 5100 7800 5100
 Wire Wire Line

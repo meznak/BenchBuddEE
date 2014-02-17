@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 6 9
 Title ""
-Date "16 feb 2014"
+Date "17 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,9 +46,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 3600 3200 0    60   Input ~ 0
-D_IN+
+RELAY+
 Text HLabel 3600 3550 0    60   Input ~ 0
-D_IN-
+RELAY-
 Text HLabel 9950 2700 2    60   BiDi ~ 0
 NC
 Text HLabel 9950 2900 2    60   BiDi ~ 0
